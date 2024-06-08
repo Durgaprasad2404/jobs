@@ -1,0 +1,94 @@
+.get-jobs {
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e8e8e8;
+}
+
+.jobs-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    padding-left: 10px;
+}
+
+
+.jobs-heading {
+    font-size: 47px;
+    line-height: 80px;
+}
+
+.interests,
+.abilities {
+    font-size: 56px;
+    font-family: "Yatra One", system-ui;
+    color: red;
+}
+
+.dashborad-btn {
+    background-color: black;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: #fff;
+        color: #000;
+        font-weight: 700;
+        border-bottom: 4px solid #acb718;
+    }
+}
+
+.jobs-section-img {
+    height: 400px;
+    width: 100%;
+}
+
+
+
+
+@media screen and (max-width:576px) {
+    .jobs-section {
+        align-items: center;
+    }
+
+    .jobs-section-img {
+        display: none;
+    }
+
+    .jobs-heading {
+        text-align: center;
+        font-size: 35px;
+        line-height: 60px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .get-jobs {
+        justify-content: space-around;
+    }
+
+    .jobs-section {
+        align-items: center;
+    }
+
+    .jobs-heading {
+        text-align: center;
+        font-size: 40px;
+    }
+
+    .interests,
+    .abilities {
+        font-size: 68px;
+    }
+
+    .dashborad-btn {
+        font-size: 20px;
+        padding: 10px 15px;
+    }
+}
